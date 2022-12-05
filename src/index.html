@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./main.ts" type="module" defer></script>
+
+		<title>Keyboard trainer</title>
+	</head>
+
+	<body>
+		<div class="py-4 max-w-[1085px] mx-auto h-screen pt-10">
+
+			<div>
+				<input
+					class="block w-full rounded-xl p-3 border border-gray-400 mb-4"
+					type="text"
+					id="input"
+				/>
+
+				<pre class="text-container flex text-base overflow-hidden mb-8 !font-[Consolas]">
+					<span id="text"></span>
+				</pre>
+
+				<div class="keyboard-base">
+					<div class="key" data-key="~">~</div>
+					<div class="key" data-key="1">1</div>
+					<div class="key" data-key="2">2</div>
+					<div class="key" data-key="3">3</div>
+					<div class="key" data-key="4">4</div>
+					<div class="key" data-key="5">5</div>
+					<div class="key" data-key="6">6</div>
+					<div class="key" data-key="7">7</div>
+					<div class="key" data-key="8">8</div>
+					<div class="key" data-key="9">9</div>
+					<div class="key" data-key="0">0</div>
+					<div class="key" data-key="-">-</div>
+					<div class="key" data-key="+">+</div>
+					<div class="key delete hide">⌫ Backspace</div>
+					<div class="key tab hide">Tab</div>
+					<div class="key" data-key="Q">Q</div>
+					<div class="key" data-key="W">W</div>
+					<div class="key" data-key="E">E</div>
+					<div class="key" data-key="R">R</div>
+					<div class="key" data-key="T">T</div>
+					<div class="key" data-key="Y">Y</div>
+					<div class="key" data-key="U">U</div>
+					<div class="key" data-key="I">I</div>
+					<div class="key" data-key="O">O</div>
+					<div class="key" data-key="P">P</div>
+					<div class="key" data-key="[">[</div>
+					<div class="key" data-key="]">]</div>
+					<div class="key backslash" data-key="\">\</div>
+					<div class="key capslock" data-key="Caps Lock">⇪ Caps Lock</div>
+					<div class="key" data-key="A">A</div>
+					<div class="key" data-key="S">S</div>
+					<div class="key" data-key="D">D</div>
+					<div class="key" data-key="F">F</div>
+					<div class="key" data-key="G">G</div>
+					<div class="key" data-key="H">H</div>
+					<div class="key" data-key="J">J</div>
+					<div class="key" data-key="K">K</div>
+					<div class="key" data-key="L">L</div>
+					<div class="key" data-key=";">;</div>
+					<div class="key" data-key="'">'</div>
+					<div class="key return" data-key="Enter">Enter →</div>
+					<div class="key leftshift" data-key="ShiftLeft">⇧ Shift</div>
+					<div class="key" data-key="Z">Z</div>
+					<div class="key" data-key="X">X</div>
+					<div class="key" data-key="C">C</div>
+					<div class="key" data-key="V">V</div>
+					<div class="key" data-key="B">B</div>
+					<div class="key" data-key="N">N</div>
+					<div class="key" data-key="M">M</div>
+					<div class="key" data-key=",">,</div>
+					<div class="key" data-key=".">.</div>
+					<div class="key" data-key="/">/</div>
+					<div class="key rightshift" data-key="ShiftRight">Shift ⇧</div>
+					<div class="key leftctrl hide">Ctrl</div>
+					<div class="key command hide">Command</div>
+					<div class="key hide">Alt</div>
+					<div class="key space" data-key=" "></div>
+					<div class="key hide">Alt</div>
+					<div class="key command hide">Command</div>
+					<div class="key rightctrl hide">Ctrl</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Consolas, monospace;
+}
+
+.text-container {
+	--line-height: 24px;
+	--rows-count: 3;
+	height: calc(var(--line-height) * var(--rows-count));
+}
+
+.keyboard-base {
+	@apply bg-slate-100;
+	max-width: 1085px;
+	padding: 18px;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(30, 30px);
+	grid-template-rows: repeat(5, 60px);
+	grid-gap: 5px;
+}
+
+.key {
+	@apply bg-slate-50 transition;
+	border: 1px solid grey;
+	border-radius: 5px;
+	grid-column: span 2;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 17px;
+	user-select: none;
+}
+
+.key.active {
+	@apply bg-slate-300;
+}
+
+.key.error {
+	@apply bg-red-300;
+}
+
+.key.hide {
+	opacity: 0.3;
+}
+
+.delete {
+	grid-column: span 4;
+}
+
+.tab {
+	grid-column: span 3;
+}
+
+.backslash {
+	grid-column: span 3;
+}
+
+.capslock {
+	grid-column: span 4;
+}
+
+.return {
+	grid-column: span 4;
+}
+
+.leftshift {
+	grid-column: span 5;
+}
+
+.rightshift {
+	grid-column: span 5;
+}
+
+.leftctrl {
+	grid-column: span 3;
+}
+
+.rightctrl {
+	grid-column: span 4;
+}
+
+.command {
+	grid-column: span 3;
+	font-size: 14px;
+}
+
+.space {
+	grid-column: span 13;
+}
+
+.checked {
+	opacity: 0.2;
+}
